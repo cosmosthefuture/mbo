@@ -2,10 +2,10 @@
 
 
     <footer class="bg-amber-50 w-full py-8" id="contact_section">
-        <div class=" flex justify-between w-10/12 mx-auto">
+        <div class=" flex justify-between flex-col lg:flex-row w-10/12 mx-auto">
             <div></div>
-            <p class="text-gray-600 mb-4 md:mb-0">2024 All Right Reserved</p>
-            <div class="flex gap-3">
+            <p class="text-gray-600 mb-4 md:mb-0 text-center">2024 All Right Reserved</p>
+            <div class="flex gap-3 justify-center">
                 
                 <a href="https://instagram.com" class="flex items-center justify-center w-8 h-8 rounded-full border border-[#e62765] text-[#e62765] ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

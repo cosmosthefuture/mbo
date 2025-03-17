@@ -1,4 +1,4 @@
-<div class=" fixed top-0 w-full z-[80] navbar block px-0 bg-white hidden lg:block" id="navbar">
+<div class=" fixed top-0 w-full z-[80] navbar px-0 bg-white hidden lg:block shadow-sm" id="navbar">
     <div class="w-10/12 mx-auto flex justify-between py-1.5 items-center">
         <div class="flex self-center">
             <img src="{{ asset('img/logo.png') }}" class="w-20 my-auto" alt="">
@@ -27,8 +27,9 @@
                     <div class="dropdown">
                         <div tabindex="0" role="button" class=" ">Services</div>
                         <ul tabindex="0" class="dropdown-content menu bg-white rounded-md z-1 w-52 p-2 shadow-md">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
+                            <li><a href="/trading" class=" focus:text-black active:!text-black active:!bg-white">Trading</a></li>
+                            <li><a href="/logistics" class=" focus:text-black active:!text-black active:!bg-white">Logistics</a></li>
+                            <li><a href="/telecom" class=" focus:text-black active:!text-black active:!bg-white">Telecom</a></li>
                         </ul>
                     </div>
                 </li>
@@ -81,27 +82,27 @@
             </li>
             <li>
                 <a href="/project" class=" @yield('project-sidebar') focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
-                    Project
+                    About
                 </a>
             </li>
             <li>
                 <a href="#" class=" portfolio_scroll focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
-                    Portfolio
+                    Contacts
                 </a>
             </li>
             <li>
-                <a href="/team" class=" @yield('team-sidebar') focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
-                    Team
+                <a href="/team" class=" @yield('trading-sidebar') focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
+                    Trading
                 </a>
             </li>
             <li>
                 <a href="#" class=" testimonial_scroll focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
-                    Testimonials
+                    Logistics
                 </a>
             </li>
             <li>
                 <a href="#" class=" contact_scroll focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
-                    Contacts
+                    Telecom
                 </a>
             </li>
         </ul>
