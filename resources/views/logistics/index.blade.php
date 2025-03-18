@@ -36,7 +36,7 @@
         </section>
 
         <section class="bg-[#f3f3f3]">
-            <div class="pt-12 lg:pt-24 pb-12 lg:pb-24 w-10/12 mx-auto px-0">
+            <div class="pt-12 lg:pt-24 pb-12 lg:pb-24 w-10/12 mx-auto px-0 logistics-one">
                 <div class="flex justify-center w-full mb-12" >
                     <div>
                         <p class="text-3xl lg:text-4xl mb-3 w-full text-black text-left lg:text-center">
@@ -186,7 +186,7 @@
         </section>
         
         <section class="bg-[#fefced] pt-8 lg:pt-20 pb-10 lg:pb-20 mb-8 lg:mb-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-10/12 mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 w-10/12 mx-auto logistics-two">
                 
                 <div class="px-0 lg:px-12 py-4 flex flex-col justify-center mb-6 lg:mb-0">
                     <p class="bg-[#FEF8C9] py-2 px-4 mb-3 lg:mb-5 w-fit text-black text-xl">About</p>
@@ -251,7 +251,7 @@
         </section>
 
         <section class="bg-white pb-24">
-            <div class="w-10/12 mx-auto text-center px-0 lg:px-12 mb-8">
+            <div class="w-10/12 mx-auto text-center px-0 lg:px-12 mb-8 logistics-three">
                 <p class="text-4xl mb-6 w-full text-black font-semibold">
                     Industry we served
                 </p>
@@ -308,7 +308,7 @@
         </section>
 
         <section class="bg-[#f3f3f3] py-24">
-            <div class="w-10/12 mx-auto text-center">
+            <div class="w-10/12 mx-auto text-center logistics-four">
                 <p class="text-4xl mb-6 w-full text-black font-semibold">
                     Ready to Discuss Your <br> Trading Needs?
 
@@ -334,12 +334,12 @@
         gsap.registerPlugin(ScrollTrigger);
 
 
-        gsap.to('.animation-one', {
+        gsap.to('.logistics-one', {
             scrollTrigger: {
-                trigger: '.animation-one',
-                start: 'top 80%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.logistics-one',
+                start: 'top 75%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,
@@ -347,12 +347,12 @@
             ease: 'power2.out',
         });
 
-        gsap.to('.animation-two', {
+        gsap.to('.logistics-two', {
             scrollTrigger: {
-                trigger: '.animation-two',
-                start: 'top 90%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.logistics-two',
+                start: 'top 90%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,
@@ -360,12 +360,12 @@
             ease: 'power2.out',
         });
 
-        gsap.to('.animation-three', {
+        gsap.to('.logistics-three', {
             scrollTrigger: {
-                trigger: '.animation-three',
-                start: 'top 110%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none reverse', // Play animation on enter, reverse on leave
+                trigger: '.logistics-three',
+                start: 'top 90%',
+                end: 'bottom center',
+                toggleActions: 'play none none reverse',
             },
             opacity: 1,
             y: 0,
@@ -373,25 +373,25 @@
             ease: 'power2.out',
         });
 
-        // gsap.to('.animation-four', {
-        //     scrollTrigger: {
-        //         trigger: '.animation-four',
-        //         start: 'top 110%',
-        //         end: 'bottom center',
-        //         toggleActions: 'play none none reverse',
-        //     },
-        //     opacity: 1,
-        //     y: 0,
-        //     duration: 1,
-        //     ease: 'power2.out',
-        // });
-
-        gsap.to('.animation-five', {
+        gsap.to('.logistics-four', {
             scrollTrigger: {
-                trigger: '.animation-five',
-                start: 'top 110%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.logistics-four',
+                start: 'top 100%',
+                end: 'bottom center',
+                toggleActions: 'play none none reverse',
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power2.out',
+        });
+
+        gsap.to('.logistics-five', {
+            scrollTrigger: {
+                trigger: '.logistics-five',
+                start: 'top 110%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,

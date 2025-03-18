@@ -91,17 +91,17 @@
                 </a>
             </li>
             <li>
-                <a href="/team" class=" @yield('trading-sidebar') focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
+                <a href="/trading" class=" @yield('trading-sidebar') focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
                     Trading
                 </a>
             </li>
             <li>
-                <a href="#" class=" testimonial_scroll focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
+                <a href="/logistics" class=" testimonial_scroll focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
                     Logistics
                 </a>
             </li>
             <li>
-                <a href="#" class=" contact_scroll focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
+                <a href="/telecom" class=" contact_scroll focus:!bg-transparent active:!bg-transparent focus:!text-black active:!text-black">
                     Telecom
                 </a>
             </li>

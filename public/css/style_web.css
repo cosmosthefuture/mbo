@@ -207,15 +207,19 @@ body {
   /*  this is where the magic happens:  */
   background-attachment: fixed; }
 
-.animation-one, .animation-two, .animation-three, .animation-four, .animation-five {
+.home-one, .home-two, .home-three, .home-four, .home-five {
   opacity: 0;
   transform: translateY(50px); }
 
-.project-one, .project-two, .project-three, .project-four, .project-five {
+.trading-one, .trading-two, .trading-three, .trading-four, .trading-five {
   opacity: 0;
   transform: translateY(50px); }
 
-.team-one, .team-two, .team-three, .team-four, .team-five, .team-six, .team-seven, .team-eight, .team-nine {
+.telecom-one, .telecom-two, .telecom-three, .telecom-four, .telecom-five {
+  opacity: 0;
+  transform: translateY(50px); }
+
+.logistics-one, .logistics-two, .logistics-three, .logistics-four, .logistics-five, .logistics-six, .logistics-seven, .logistics-eight, .logistics-nine {
   opacity: 0;
   transform: translateY(50px); }
 

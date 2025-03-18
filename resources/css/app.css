@@ -9,4 +9,7 @@
     .logi-service-card{
         @apply bg-white shadow-[#0004] shadow-md pt-24 pb-10 lg:pb-20 px-8 xl:px-8 text-center border-t border-gray-200 mx-3 h-full
     }
+    .telecom-service-card{
+        @apply bg-white shadow-[#0004] shadow-md pt-24 pb-10 lg:pb-20 px-8 xl:px-8 text-center border-t border-gray-200 mx-3 h-full
+    }
 }

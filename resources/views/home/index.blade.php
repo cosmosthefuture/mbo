@@ -8,35 +8,35 @@
 
 
     <div>
-        <section class="pb-20 bg-[#fefced]">
+        <section class="pb-12 lg:pb-20 bg-[#fefced]">
             <div class="grid grid-cols-1 lg:grid-cols-5 w-10/12 mx-auto min-h-[92vh] pt-[12vh]">
-                <div class="col-span-3 pr-12 h-full text-left flex flex-col justify-center">
-                    <p class="text-6xl text-black mb-5 font-semibold block mr-12">
+                <div class="col-span-3 pr-0 lg:pr-12 h-full text-left flex flex-col justify-center order-2 lg:order-1">
+                    <p class="text-3xl lg:text-6xl text-black mb-3 lg:mb-5 font-semibold block mr-6 lg:mr-12">
                         Your Tursted Partner in 
                         Trading, Logistics & 
                         Teelcom
                     </p>
-                    <p class="text-base text-gray-600 block mr-20 pr-12 mb-8">
+                    <p class="text-base text-gray-600 block mr-0 lg:mr-20 pr-0 lg:pr-12 mb-4 lg:mb-8">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ab hic facere necessitatibus at aliquid totam culpa saepe consequuntur laborum unde in, adipisci enim delectus quaerat eos minima labore voluptatum?
 
                     </p>
-                    <div>
-                        <button class="bg-[#2b4b70] text-white px-8 py-2 rounded-md mr-4">
+                    <div class=" flex lg:block justify-start">
+                        <button class="bg-[#2b4b70] text-sm lg:text-base text-white px-4 lg:px-8 py-2 rounded-md mr-4">
                             Discover Our Service
                         </button>
-                        <button class="bg-yellow-400 text-black px-8 py-2 rounded-md">
+                        <button class="bg-yellow-400 text-sm lg:text-base text-black px-4 lg:px-8 py-2 rounded-md">
                             Contact Us
                         </button>
                     </div>
                 </div>
-                <div class=" col-span-2">
-                    <img class="w-full rounded mt-8" src="img/home_one.png" alt="">
+                <div class=" col-span-2 flex items-center order-1 lg:order-2">
+                    <img class="w-full rounded mt-0 lg:mt-8 mb-8 lg:mb-0" src="img/home_one.png" alt="">
                 </div>
             </div>
         </section>
 
         <section class="bg-[#f3f3f3]">
-            <div class="py-24 w-10/12 mx-auto px-0">
+            <div class="py-24 w-10/12 mx-auto px-0 home-two">
                 <div class="flex justify-center w-full mb-12" >
                     <div>
                         <p class="bg-[#FEF8C9] py-2 px-4 mb-6 w-fit mx-auto text-black">Our Services</p>
@@ -114,7 +114,7 @@
             </div>
         </section>
         
-        <section class="bg-white pt-12 pb-0 lg:pb-12 mb-8 lg:mb-24">
+        <section class="bg-white pt-12 pb-0 lg:pb-12 mb-8 lg:mb-24 home-three">
             <div class="grid grid-cols-1 lg:grid-cols-2 w-10/12 mx-auto">
                 <img src="{{ asset('img/home_two.png') }}" class=" w-full pr-4" alt="">
                 <div class="px-0 lg:px-12 py-4 flex flex-col justify-center">
@@ -142,7 +142,7 @@
                 </div>
             </div>
         </section>
-        <section class="mb-12 lg:mb-24 animation-five">
+        <section class="mb-12 lg:mb-24 home-four">
             <p class=" w-full text-center text-lg lg:text-3xl font-semibold text-black mb-2">
                 Trusted By Leading Companies
             </p>
@@ -161,7 +161,7 @@
 
 
 
-        <section class="w-10/12 mx-auto px-4 md:px-6 pb-20">
+        <section class="w-10/12 mx-auto px-4 md:px-6 pb-20 home-five">
             <div class="inline-block bg-amber-100 px-4 py-2 mb-6">
                 <span class="font-medium">About</span>
             </div>
@@ -293,12 +293,12 @@
         gsap.registerPlugin(ScrollTrigger);
 
 
-        gsap.to('.animation-one', {
+        gsap.to('.home-one', {
             scrollTrigger: {
-                trigger: '.animation-one',
-                start: 'top 80%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.home-one',
+                start: 'top 80%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,
@@ -306,12 +306,12 @@
             ease: 'power2.out',
         });
 
-        gsap.to('.animation-two', {
+        gsap.to('.home-two', {
             scrollTrigger: {
-                trigger: '.animation-two',
-                start: 'top 90%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.home-two',
+                start: 'top 80%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,
@@ -319,12 +319,12 @@
             ease: 'power2.out',
         });
 
-        gsap.to('.animation-three', {
+        gsap.to('.home-three', {
             scrollTrigger: {
-                trigger: '.animation-three',
-                start: 'top 110%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none reverse', // Play animation on enter, reverse on leave
+                trigger: '.home-three',
+                start: 'top 110%',
+                end: 'bottom center',
+                toggleActions: 'play none none reverse',
             },
             opacity: 1,
             y: 0,
@@ -332,25 +332,25 @@
             ease: 'power2.out',
         });
 
-        // gsap.to('.animation-four', {
-        //     scrollTrigger: {
-        //         trigger: '.animation-four',
-        //         start: 'top 110%',
-        //         end: 'bottom center',
-        //         toggleActions: 'play none none reverse',
-        //     },
-        //     opacity: 1,
-        //     y: 0,
-        //     duration: 1,
-        //     ease: 'power2.out',
-        // });
-
-        gsap.to('.animation-five', {
+        gsap.to('.home-four', {
             scrollTrigger: {
-                trigger: '.animation-five',
-                start: 'top 110%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.home-four',
+                start: 'top 110%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power2.out',
+        });
+
+        gsap.to('.home-five', {
+            scrollTrigger: {
+                trigger: '.home-five',
+                start: 'top 110%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,

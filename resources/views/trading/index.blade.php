@@ -36,7 +36,7 @@
         </section>
 
         <section class="bg-[#f3f3f3]">
-            <div class="pt-12 lg:pt-24 pb-12 lg:pb-24 w-10/12 mx-auto px-0">
+            <div class="pt-12 lg:pt-24 pb-12 lg:pb-24 w-10/12 mx-auto px-0 trading-one">
                 <div class="flex justify-center w-full mb-12" >
                     <div>
                         <p class="text-3xl lg:text-4xl mb-3 w-full text-black text-left lg:text-center">
@@ -164,7 +164,7 @@
         </section>
         
         <section class="bg-[#fefced] pt-10 lg:pt-20 pb-0 lg:pb-20 mb-8 lg:mb-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 w-10/12 mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 w-10/12 mx-auto trading-two">
                 
                 <div class="px-0 lg:px-12 py-4 flex flex-col justify-center">
                     <p class="bg-[#FEF8C9] py-2 px-4 mb-5 w-fit text-black text-xl">About</p>
@@ -229,7 +229,7 @@
         </section>
 
         <section class="bg-white pb-24">
-            <div class="w-10/12 mx-auto text-center">
+            <div class="w-10/12 mx-auto text-center trading-three">
                 <p class="text-4xl mb-6 w-full text-black font-semibold">
                     Ready to Discuss Your <br> Trading Needs?
 
@@ -253,12 +253,12 @@
         gsap.registerPlugin(ScrollTrigger);
 
 
-        gsap.to('.animation-one', {
+        gsap.to('.trading-one', {
             scrollTrigger: {
-                trigger: '.animation-one',
-                start: 'top 80%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.trading-one',
+                start: 'top 80%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,
@@ -266,12 +266,12 @@
             ease: 'power2.out',
         });
 
-        gsap.to('.animation-two', {
+        gsap.to('.trading-two', {
             scrollTrigger: {
-                trigger: '.animation-two',
-                start: 'top 90%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                trigger: '.trading-two',
+                start: 'top 90%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,
@@ -279,12 +279,12 @@
             ease: 'power2.out',
         });
 
-        gsap.to('.animation-three', {
+        gsap.to('.trading-three', {
             scrollTrigger: {
-                trigger: '.animation-three',
-                start: 'top 110%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none reverse', // Play animation on enter, reverse on leave
+                trigger: '.trading-three',
+                start: 'top 110%',
+                end: 'bottom center',
+                toggleActions: 'play none none reverse',
             },
             opacity: 1,
             y: 0,
@@ -308,9 +308,9 @@
         gsap.to('.animation-five', {
             scrollTrigger: {
                 trigger: '.animation-five',
-                start: 'top 110%', // Start animation when hero section is in the center
-                end: 'bottom center', // End animation when hero section leaves the center
-                toggleActions: 'play none none none', // Play animation on enter, reverse on leave
+                start: 'top 110%',
+                end: 'bottom center',
+                toggleActions: 'play none none none',
             },
             opacity: 1,
             y: 0,
