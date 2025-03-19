@@ -1,4 +1,4 @@
-<div class=" fixed top-0 w-full z-[80] navbar px-0 bg-white hidden lg:block shadow-sm" id="navbar">
+<div class=" fixed top-0 w-full z-[80] navbar px-0 bg-white hidden md:block shadow-sm" id="navbar">
     <div class="w-10/12 mx-auto flex justify-between py-1.5 items-center">
         <div class="flex self-center">
             <img src="{{ asset('img/logo.png') }}" class="w-20 my-auto" alt="">
@@ -55,7 +55,7 @@
 
 
 
-<div class="grid lg:hidden drawer z-[40] n">
+<div class="grid md:hidden drawer z-[40] n">
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content fixed top-0 left-0 right-0 bg-white shadow flex justify-between">
         <select id="language-selector-mobile" class="bg-transparent text-gray-600 px-2 ml-2 py-1 rounded-md text-sm focus:outline-none focus:ring-0 focus:shadow-none">

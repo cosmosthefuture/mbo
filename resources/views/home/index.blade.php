@@ -9,28 +9,28 @@
 
     <div>
         <section class="pb-12 lg:pb-20 bg-[#fefced]">
-            <div class="grid grid-cols-1 lg:grid-cols-5 w-10/12 mx-auto min-h-[92vh] pt-[12vh]">
-                <div class="col-span-3 pr-0 lg:pr-12 h-full text-left flex flex-col justify-center order-2 lg:order-1">
-                    <p class="text-3xl lg:text-6xl text-black mb-3 lg:mb-5 font-semibold block mr-6 lg:mr-12">
+            <div class="grid grid-cols-1 md:grid-cols-5 w-10/12 mx-auto min-h-fit lg:min-h-[92vh] pt-[12vh]">
+                <div class="col-span-3 pr-0 md:pr-12 h-full text-left flex flex-col justify-center order-2 md:order-1">
+                    <p class="text-2xl lg:text-4xl xl:text-6xl text-black mb-3 md:mb-5 font-semibold block mr-6 md:mr-12">
                         Your Tursted Partner in 
                         Trading, Logistics & 
                         Teelcom
                     </p>
-                    <p class="text-base text-gray-600 block mr-0 lg:mr-20 pr-0 lg:pr-12 mb-4 lg:mb-8">
+                    <p class="text-sm lg:text-base text-gray-600 block mr-0 lg:mr-20 pr-0 lg:pr-12 mb-4 lg:mb-8">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ab hic facere necessitatibus at aliquid totam culpa saepe consequuntur laborum unde in, adipisci enim delectus quaerat eos minima labore voluptatum?
 
                     </p>
-                    <div class=" flex lg:block justify-start">
-                        <button class="bg-[#2b4b70] text-sm lg:text-base text-white px-4 lg:px-8 py-2 rounded-md mr-4">
+                    <div class=" flex md:block justify-start">
+                        <button class="bg-[#2b4b70] text-sm md:text-base text-white px-4 md:px-8 py-2 rounded-md mr-4 mb-2">
                             Discover Our Service
                         </button>
-                        <button class="bg-yellow-400 text-sm lg:text-base text-black px-4 lg:px-8 py-2 rounded-md">
+                        <button class="bg-yellow-400 text-sm md:text-base text-black px-4 md:px-8 py-2 rounded-md mb-2">
                             Contact Us
                         </button>
                     </div>
                 </div>
-                <div class=" col-span-2 flex items-center order-1 lg:order-2">
-                    <img class="w-full rounded mt-0 lg:mt-8 mb-8 lg:mb-0" src="img/home_one.png" alt="">
+                <div class=" col-span-2 flex items-center order-1 md:order-2">
+                    <img class="w-full rounded mt-0 md:mt-8 mb-8 md:mb-0" src="img/home_one.png" alt="">
                 </div>
             </div>
         </section>
@@ -217,30 +217,30 @@
                 </div>
 
                 <div class="bg-white py-12 px-12 rounded-lg shadow-sm border border-gray-200">
-                    <form>
+                    <form id="contact-form">
                         <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        <div>
-                            <label for="firstName" class="block text-sm text-black font-medium mb-1">
-                            First Name
-                            </label>
-                            <input
-                            type="text"
-                            id="firstName"
-                            placeholder="First Name"
-                            class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white"
-                            />
-                        </div>
-                        <div>
-                            <label for="lastName" class="block text-sm text-black font-medium mb-1">
-                            Last Name
-                            </label>
-                            <input
-                            type="text"
-                            id="lastName"
-                            placeholder="Last Name"
-                            class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white"
-                            />
-                        </div>
+                            <div>
+                                <label for="firstName" class="block text-sm text-black font-medium mb-1">
+                                First Name
+                                </label>
+                                <input
+                                type="text"
+                                id="firstName" name="first_name"
+                                placeholder="First Name"
+                                class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white text-black" required
+                                />
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm text-black font-medium mb-1">
+                                Last Name
+                                </label>
+                                <input
+                                type="text"
+                                id="lastName" name="last_name"
+                                placeholder="Last Name"
+                                class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white text-black" required
+                                />
+                            </div>
                         </div>
 
                         <div class="mb-4">
@@ -249,9 +249,9 @@
                             </label>
                             <input
                                 type="email"
-                                id="email"
+                                id="email" name="email"
                                 placeholder="Email"
-                                class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white"
+                                class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white text-black" required
                             />
                         </div>
 
@@ -260,10 +260,10 @@
                                 Message
                             </label>
                             <textarea
-                                id="message"
+                                id="message" name="message"
                                 placeholder="Enter Your Message"
                                 rows="5"
-                                class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white"
+                                class="w-full px-3 py-2 border border-gray-200 rounded-md bg-white text-black"
                             ></textarea>
                         </div>
 
@@ -293,18 +293,18 @@
         gsap.registerPlugin(ScrollTrigger);
 
 
-        gsap.to('.home-one', {
-            scrollTrigger: {
-                trigger: '.home-one',
-                start: 'top 80%',
-                end: 'bottom center',
-                toggleActions: 'play none none none',
-            },
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: 'power2.out',
-        });
+        // gsap.to('.home-one', {
+        //     scrollTrigger: {
+        //         trigger: '.home-one',
+        //         start: 'top 80%',
+        //         end: 'bottom center',
+        //         toggleActions: 'play none none none',
+        //     },
+        //     opacity: 1,
+        //     y: 0,
+        //     duration: 1,
+        //     ease: 'power2.out',
+        // });
 
         gsap.to('.home-two', {
             scrollTrigger: {
@@ -449,7 +449,11 @@
             ],
         });
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script>
+        
+
         // $(document).ready(function () {
             
         //     function checkIfHome() {
